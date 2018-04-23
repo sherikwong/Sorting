@@ -13,6 +13,6 @@ describe('Split Array function', function() {
 
 describe('Merge function', function(){
   it('is able to merge two sorted arrays into one sorted array', function(){
-    expect(merge( [3,6,8,20], [1,5,5,78] ).toEqual( [1,3,5,5,6,8,20,78])); // even
+    expect(merge( [3,6,8,20], [1,5,5,78] )).toEqual( [1,3,5,5,6,8,20,78]); // even
   });
 });
