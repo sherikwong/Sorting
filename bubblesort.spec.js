@@ -8,7 +8,7 @@ describe('Bubble Sort', function(){
     let counter;
     spyOn(bubbleSort, 'swap').and.callThrough();
     counter = bubbleSort.swap.calls.count();
-    console.log(bubbleSort.swap.calls
+    // console.log(bubbleSort.swap.calls)
   });
   // it('getting to the center of tootsiepop involves exactly three licks', function () {
   //   bubbleSort.swap();
