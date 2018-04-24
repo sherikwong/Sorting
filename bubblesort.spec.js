@@ -4,17 +4,15 @@ describe('Bubble Sort', function(){
 
 
 
-  beforeEach(function () {
-    let counter;
-    spyOn(bubbleSort, 'swap').and.callThrough();
-    counter = bubbleSort.swap.calls.count();
-    // console.log(bubbleSort.swap.calls)
-  });
-  // it('getting to the center of tootsiepop involves exactly three licks', function () {
-  //   bubbleSort.swap();
-  //   expect(bubbleSort.swap.calls.count()).toEqual(3);
+  // beforeEach(function () {
+
   // });
 
+  it('calls function right number of times', function () {
+    spyOn(window, 'swap').and.callThrough();
+    bubbleSort([4,6,5,1]);
+    expect(____.calls.count()).toEqual(10);
+  });
 
   it('handles an empty array', function(){
     expect( bubbleSort.swap([]) ).toEqual( [] );
@@ -29,3 +27,4 @@ describe('Bubble Sort', function(){
     expect( bubbleSort.swap([6,8,5,2]) ).toEqual( [2,5,6,8] );
   });
 });
+
